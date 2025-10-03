@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: cita-bot-pakistan
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python cita_bot.py"
+    envVars:
+      - key: DECOD_USER
+        value: user-sph1i3su70
+      - key: DECOD_PASS
+        value: 9v36Qzlbn3yLL~Nipz
+      - key: CAPTCHA_KEY
+        value: 2b750d90169c808fd82b4a0918f11725
+      - key: TELEGRAM_TOKEN
+        value: 8466920122:AAHTMDZFUpl4Jxgcio4QDJEkuXbGL5mNvoU
+      - key: CHAT_ID
+        value: 7292818929
